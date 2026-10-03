@@ -19,6 +19,8 @@ Everything here runs locally without AI. Writing the script and translating subt
 """
 import argparse, glob, hashlib, json, os, re, shutil, subprocess, sys, tempfile, time, wave
 
+__version__ = '0.1.0'
+
 KIT = os.path.dirname(os.path.abspath(__file__))
 MODELS = os.path.join(KIT, 'models')
 SR = 44100
@@ -475,6 +477,7 @@ def cmd_skill(a):
 # ---------------------------------------------------------------- main
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument('--version', action='version', version=f'coursekit {__version__}')
     sub = ap.add_subparsers(dest='cmd', required=True)
     p = sub.add_parser('init'); p.add_argument('deck'); p.add_argument('--course'); p.add_argument('--lang', default='en')
     p = sub.add_parser('setup'); p.add_argument('langs', nargs='*')
