@@ -1,0 +1,8 @@
+# Tool settings only; coursekit is run as a script (see ck.sh), not installed as a package.
+[tool.ruff.lint]
+ignore = [
+    "SIM115",  # files are opened and read in one expression; they close when collected
+    "S110",    # best-effort probe of the optional Voicebox API: failure is expected and handled
+    "BLE001",  # same probe
+    "EXE001",  # coursekit.py is started with python or ck.sh, so it is not marked executable
+]
