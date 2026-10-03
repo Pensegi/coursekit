@@ -1,0 +1,10 @@
+coursekit
+Copyright 2026 Dennis Rudin
+
+Turns a slide deck and teacher's notes into an audiobook, a video course and subtitles.
+Designed, directed and reviewed by Dennis Rudin, developed with AI assistance from
+Claude (Anthropic) during the "Ukulele with Claude" project.
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+It uses, but does not include, third-party software and models under their own
+licences; see LICENSE.md.
