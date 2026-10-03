@@ -31,7 +31,7 @@ import tempfile
 import time
 import wave
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 KIT = os.path.dirname(os.path.abspath(__file__))
 MODELS = os.path.join(KIT, "models")

@@ -1,6 +1,6 @@
 # coursekit
 
-[![Version](https://img.shields.io/badge/version-0.1.0-blue)](https://github.com/pensegi/coursekit/releases)
+[![Version](https://img.shields.io/badge/version-0.1.1-blue)](https://github.com/pensegi/coursekit/releases)
 [![Licence: Apache-2.0](https://img.shields.io/badge/licence-Apache--2.0-green)](LICENSE)
 [![Python 3.10–3.13](https://img.shields.io/badge/python-3.10%E2%80%933.13-informational)](#requirements)
 
@@ -20,7 +20,7 @@ slide deck + notes ──► Claude writes the narration ──► coursekit ren
    (PPTX or PDF)          (script/*.md, one per module)    (local, no tokens)     (MP3/M4B · MP4 · SRT)
 ```
 
-> Status: early (version 0.1.0). Tested end to end on Linux, with English narration (Kokoro) and English and Swedish subtitles. The Piper voices for other languages haven't been tested yet. Built to run on macOS with Homebrew.
+> Status: early (version 0.1.1). Tested end to end on Linux, with English narration (Kokoro) and English and Swedish subtitles. The Piper voices for other languages haven't been tested yet. Built to run on macOS with Homebrew.
 
 ---
 
