@@ -1,0 +1,5 @@
+# coursekit - development tools: runtime packages plus lint, format and tests
+# Install: python3 -m venv .venv-dev && .venv-dev/bin/pip install -r requirements-dev.txt
+-r requirements.txt
+ruff>=0.16
+pytest>=9

@@ -38,6 +38,7 @@ slide deck + notes ──► Claude writes the narration ──► coursekit ren
 - [Output](#output)
 - [Publishing on YouTube](#publishing-on-youtube)
 - [Tips and limits](#tips-and-limits)
+- [Development](#development)
 - [Licence and copyright](#licence-and-copyright)
 - [Credits](#credits)
 
@@ -257,6 +258,25 @@ AI narration: if you publish elsewhere, check that platform's current rules on A
 - **Interrupted runs lose nothing.** Speech is cached per paragraph and videos are built from cached segments, so an interruption never means starting over.
 - **Piper speaks foreign phrases with the narrator's pronunciation.** Kokoro switches to the phrase's own language.
 - **Piper voices are still untested** in coursekit. Try `voicetest` before a full render.
+
+## Development
+
+For changing coursekit itself. The development environment adds the lint, format and test tools to the runtime packages:
+
+```bash
+python3 -m venv .venv-dev
+.venv-dev/bin/pip install -r requirements-dev.txt
+```
+
+Run the checks before a commit:
+
+```bash
+.venv-dev/bin/ruff check .
+.venv-dev/bin/ruff format --check .
+.venv-dev/bin/pytest -q
+```
+
+The tests in `tests/` cover the pure logic (script parsing, the `check` command, subtitle timing and translation files). They need no voice models, ffmpeg or network.
 
 ## Licence and copyright
 
